@@ -11,7 +11,7 @@ from os import listdir
 class nearest_restaurants:
     def __init__(self, data_path):
         self.data_path = data_path
-        self.key = "AIzaSyBHWiHNgsyEL8IzkG42rcZYmqzjIXXHswE"
+        self.key = input("Type in an API Key: ")
         self.gmaps = googlemaps.Client(key = self.key)
         self.df = pd.read_csv(f"{self.data_path}")
 
